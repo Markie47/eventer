@@ -1,0 +1,116 @@
+/* globals.css */
+
+
+:root {
+  --font-poppins: 'Poppins', sans-serif;
+}
+
+body {
+  font-family: var(--font-poppins);
+  margin: 0;
+  padding: 0;
+}
+
+.custom-footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  text-align: left;
+}
+
+
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto; /* Center the wrapper */
+  padding: 0 20px;
+}
+
+.bg-primary-50 {
+  background-color: #f0f4f8;
+}
+
+.bg-dotted-pattern {
+  background-image: url('/path/to/dotted-pattern.png');
+}
+
+.h1-bold {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.p-regular-20 {
+  font-size: 1.25rem;
+}
+
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #81009b;
+  color: white;
+  text-align: center;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.button:hover {
+  background-color: #690069;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.flex-row {
+  flex-direction: row;
+}
+
+.flex-center {
+  align-items: center;
+  justify-content: center;
+}
+
+.flex-between {
+  justify-content: space-between;
+}
+
+.gap-4 {
+  gap: 1rem;
+}
+
+.gap-5 {
+  gap: 1.25rem;
+}
+
+.gap-8 {
+  gap: 2rem;
+}
+
+.md\:gap-12 {
+  gap: 3rem;
+}
+
+@media (min-width: 768px) {
+  .md\:py-10 {
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+  }
+
+  .md\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .md\:p-regular-24 {
+    font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 1536px) {
+  .2xl\:gap-0 {
+    gap: 0;
+  }
+}
